@@ -1,0 +1,47 @@
+class Data:
+    def __init__(self):
+        self.users = []
+
+    def add_user(self, name, live):
+        self.users.append({'name': name, 'live': live})
+
+    def get_users(self):
+        return self.users
+
+
+class View:
+    def display_users(self, users):
+        print("\nDaftar Pengguna:")
+        print("{:<20} {:<10}".format("Nama", "No Rumah"))
+        print("-" * 30)
+        for user in users:
+            print("{:<20} {:<10}".format(user['name'], user['live']))
+
+
+class Process:
+    def __init__(self):
+        self.data = Data()
+        self.view = View()
+
+    def get_user_input(self):
+        while True:
+            try:
+                name = input("Masukkan nama: ")
+                live = int (input("Masukkan no rumah: "))
+                self.data.add_user(name, live)
+                break 
+            except ValueError as e:
+                print(f"Input tidak valid: {e}. Silakan coba lagi.")
+
+    def run(self):
+        while True:
+            self.get_user_input()
+            another = input("Apakah Anda ingin menambahkan pengguna lain? (y/n): ")
+            if another.lower() != 'y':
+                break
+        self.view.display_users(self.data.get_users())
+
+
+if __name__ == "__main__":
+    process = Process()
+    process.run()
