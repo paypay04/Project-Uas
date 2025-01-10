@@ -2,8 +2,8 @@ program ini memungkinkan kita untuk memasukan nama pengguna dan nomer rumah lalu
 
 struktur program ini terdiri dari tiga kelas Utama yaitu:
 1. class data berfungsi Bertanggung jawab untuk menyimpan data pengguna. 
-2. class viw Mengembalikan seluruh daftar pengguna  da
-3. class proses Mengatur alur logika, mulai dari menerima input pengguna hingga menampilkan data
+2. class view Mengembalikan seluruh daftar pengguna data.
+3. class proses Mengatur alur logika, mulai dari menerima input pengguna hingga menampilkan data.
 
 1. class Data 
 add_user: Untuk menambahkan data pengguna ke dalam daftar.
