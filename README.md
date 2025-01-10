@@ -4,7 +4,7 @@ struktur program ini terdiri dari tiga kelas Utama yaitu:
 1. class data berfungsi Bertanggung jawab untuk menyimpan data pengguna. 
 2. class view Mengembalikan seluruh daftar pengguna data.
 3. class proses Mengatur alur logika, mulai dari menerima input pengguna hingga menampilkan data.
-
+-------------------------------------------------------------------------------------------------------------------
 1. class Data 
 add_user: Untuk menambahkan data pengguna ke dalam daftar.
 get_users: Mengembalikan seluruh daftar pengguna.
